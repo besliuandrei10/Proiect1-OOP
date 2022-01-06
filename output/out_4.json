@@ -1,99 +1,163 @@
 {
-  "annualChanges" : [ {
+  "annualChildren" : [ {
     "children" : [ {
       "lastName" : "Stoica",
       "firstName" : "Miruna",
-      "niceScoreHistory" : [ ],
+      "niceScoreHistory" : [ 10.0 ],
       "city" : "Iasi",
-      "assignedBudget" : "69",
+      "giftsPreferences" : [ "Books", "Board Games", "Toys" ],
+      "assignedBudget" : 131.5,
       "id" : 0,
-      "receivedGifts" : [ ],
+      "receivedGifts" : [ {
+        "price" : 30.0,
+        "category" : "Books",
+        "productName" : "Twilight"
+      }, {
+        "price" : 50.0,
+        "category" : "Board Games",
+        "productName" : "Puzzle"
+      }, {
+        "price" : 20.0,
+        "category" : "Toys",
+        "productName" : "Car"
+      } ],
       "age" : 12,
-      "giftPreferences" : [ "Books", "Board Games", "Toys" ],
-      "averageScore" : null
+      "averageScore" : 10.0
     }, {
       "lastName" : "Pop",
       "firstName" : "Maria",
-      "niceScoreHistory" : [ ],
+      "niceScoreHistory" : [ 9.0 ],
       "city" : "Braila",
-      "assignedBudget" : "69",
+      "giftsPreferences" : [ "Sweets" ],
+      "assignedBudget" : 131.5,
       "id" : 1,
-      "receivedGifts" : [ ],
+      "receivedGifts" : [ {
+        "price" : 15.0,
+        "category" : "Sweets",
+        "productName" : "Chocolate"
+      } ],
       "age" : 4,
-      "giftPreferences" : [ "Sweets" ],
-      "averageScore" : null
+      "averageScore" : 10.0
     } ]
   }, {
     "children" : [ {
       "lastName" : "Stoica",
       "firstName" : "Miruna",
-      "niceScoreHistory" : [ ],
+      "niceScoreHistory" : [ 10.0 ],
       "city" : "Iasi",
-      "assignedBudget" : "69",
+      "giftsPreferences" : [ "Books", "Board Games", "Toys" ],
+      "assignedBudget" : 172.63157894736844,
       "id" : 0,
-      "receivedGifts" : [ ],
-      "age" : 12,
-      "giftPreferences" : [ "Books", "Board Games", "Toys" ],
-      "averageScore" : null
+      "receivedGifts" : [ {
+        "price" : 30.0,
+        "category" : "Books",
+        "productName" : "Twilight"
+      }, {
+        "price" : 50.0,
+        "category" : "Board Games",
+        "productName" : "Puzzle"
+      }, {
+        "price" : 20.0,
+        "category" : "Toys",
+        "productName" : "Car"
+      } ],
+      "age" : 13,
+      "averageScore" : 10.0
     }, {
       "lastName" : "Pop",
       "firstName" : "Maria",
-      "niceScoreHistory" : [ ],
+      "niceScoreHistory" : [ 9.0 ],
       "city" : "Braila",
-      "assignedBudget" : "69",
+      "giftsPreferences" : [ "Sweets" ],
+      "assignedBudget" : 155.3684210526316,
       "id" : 1,
-      "receivedGifts" : [ ],
-      "age" : 4,
-      "giftPreferences" : [ "Sweets" ],
-      "averageScore" : null
+      "receivedGifts" : [ {
+        "price" : 15.0,
+        "category" : "Sweets",
+        "productName" : "Chocolate"
+      } ],
+      "age" : 5,
+      "averageScore" : 9.0
     } ]
   }, {
     "children" : [ {
       "lastName" : "Stoica",
       "firstName" : "Miruna",
-      "niceScoreHistory" : [ ],
+      "niceScoreHistory" : [ 10.0 ],
       "city" : "Iasi",
-      "assignedBudget" : "69",
+      "giftsPreferences" : [ "Books", "Board Games", "Toys" ],
+      "assignedBudget" : 115.26315789473685,
       "id" : 0,
-      "receivedGifts" : [ ],
-      "age" : 12,
-      "giftPreferences" : [ "Books", "Board Games", "Toys" ],
-      "averageScore" : null
+      "receivedGifts" : [ {
+        "price" : 30.0,
+        "category" : "Books",
+        "productName" : "Twilight"
+      }, {
+        "price" : 50.0,
+        "category" : "Board Games",
+        "productName" : "Puzzle"
+      }, {
+        "price" : 20.0,
+        "category" : "Toys",
+        "productName" : "Car"
+      } ],
+      "age" : 14,
+      "averageScore" : 10.0
     }, {
       "lastName" : "Pop",
       "firstName" : "Maria",
-      "niceScoreHistory" : [ ],
+      "niceScoreHistory" : [ 9.0 ],
       "city" : "Braila",
-      "assignedBudget" : "69",
+      "giftsPreferences" : [ "Sweets" ],
+      "assignedBudget" : 103.73684210526316,
       "id" : 1,
-      "receivedGifts" : [ ],
-      "age" : 4,
-      "giftPreferences" : [ "Sweets" ],
-      "averageScore" : null
+      "receivedGifts" : [ {
+        "price" : 15.0,
+        "category" : "Sweets",
+        "productName" : "Chocolate"
+      } ],
+      "age" : 6,
+      "averageScore" : 9.0
     } ]
   }, {
     "children" : [ {
       "lastName" : "Stoica",
       "firstName" : "Miruna",
-      "niceScoreHistory" : [ ],
+      "niceScoreHistory" : [ 10.0 ],
       "city" : "Iasi",
-      "assignedBudget" : "69",
+      "giftsPreferences" : [ "Books", "Board Games", "Toys" ],
+      "assignedBudget" : 218.42105263157893,
       "id" : 0,
-      "receivedGifts" : [ ],
-      "age" : 12,
-      "giftPreferences" : [ "Books", "Board Games", "Toys" ],
-      "averageScore" : null
+      "receivedGifts" : [ {
+        "price" : 30.0,
+        "category" : "Books",
+        "productName" : "Twilight"
+      }, {
+        "price" : 50.0,
+        "category" : "Board Games",
+        "productName" : "Puzzle"
+      }, {
+        "price" : 20.0,
+        "category" : "Toys",
+        "productName" : "Car"
+      } ],
+      "age" : 15,
+      "averageScore" : 10.0
     }, {
       "lastName" : "Pop",
       "firstName" : "Maria",
-      "niceScoreHistory" : [ ],
+      "niceScoreHistory" : [ 9.0 ],
       "city" : "Braila",
-      "assignedBudget" : "69",
+      "giftsPreferences" : [ "Sweets" ],
+      "assignedBudget" : 196.57894736842104,
       "id" : 1,
-      "receivedGifts" : [ ],
-      "age" : 4,
-      "giftPreferences" : [ "Sweets" ],
-      "averageScore" : null
+      "receivedGifts" : [ {
+        "price" : 15.0,
+        "category" : "Sweets",
+        "productName" : "Chocolate"
+      } ],
+      "age" : 7,
+      "averageScore" : 9.0
     } ]
   } ]
 }

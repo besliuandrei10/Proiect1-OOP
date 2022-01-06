@@ -1,178 +1,164 @@
 {
-  "annualChanges" : [ {
+  "annualChildren" : [ {
     "children" : [ {
       "lastName" : "Stoica",
       "firstName" : "Andreea",
-      "niceScoreHistory" : [ ],
+      "niceScoreHistory" : [ 2.0 ],
       "city" : "Cluj-Napoca",
-      "assignedBudget" : "69",
+      "giftsPreferences" : [ "Clothes", "Toys" ],
+      "assignedBudget" : 52.7,
       "id" : 0,
-      "receivedGifts" : [ ],
+      "receivedGifts" : [ {
+        "price" : 10.0,
+        "category" : "Toys",
+        "productName" : "Doll"
+      } ],
       "age" : 17,
-      "giftPreferences" : [ "Clothes", "Toys" ],
-      "averageScore" : null
+      "averageScore" : 2.0
     }, {
       "lastName" : "Pop",
       "firstName" : "Alexandra",
-      "niceScoreHistory" : [ ],
+      "niceScoreHistory" : [ 8.0 ],
       "city" : "Iasi",
-      "assignedBudget" : "69",
+      "giftsPreferences" : [ "Toys" ],
+      "assignedBudget" : 210.8,
       "id" : 1,
-      "receivedGifts" : [ ],
+      "receivedGifts" : [ {
+        "price" : 10.0,
+        "category" : "Toys",
+        "productName" : "Doll"
+      } ],
       "age" : 16,
-      "giftPreferences" : [ "Toys" ],
-      "averageScore" : null
+      "averageScore" : 8.0
     }, {
       "lastName" : "Popa",
       "firstName" : "Diana",
-      "niceScoreHistory" : [ ],
+      "niceScoreHistory" : [ 10.0 ],
       "city" : "Brasov",
-      "assignedBudget" : "69",
+      "giftsPreferences" : [ "Technology", "Clothes" ],
+      "assignedBudget" : 263.5,
       "id" : 2,
-      "receivedGifts" : [ ],
+      "receivedGifts" : [ {
+        "price" : 100.0,
+        "category" : "Technology",
+        "productName" : "Headphones"
+      }, {
+        "price" : 70.0,
+        "category" : "Clothes",
+        "productName" : "Shoes"
+      } ],
       "age" : 15,
-      "giftPreferences" : [ "Technology", "Clothes" ],
-      "averageScore" : null
+      "averageScore" : 10.0
     } ]
   }, {
     "children" : [ {
       "lastName" : "Stoica",
       "firstName" : "Andreea",
-      "niceScoreHistory" : [ ],
+      "niceScoreHistory" : [ 2.0 ],
       "city" : "Cluj-Napoca",
-      "assignedBudget" : "69",
+      "giftsPreferences" : [ "Clothes", "Toys" ],
+      "assignedBudget" : 50.0,
       "id" : 0,
-      "receivedGifts" : [ ],
-      "age" : 17,
-      "giftPreferences" : [ "Clothes", "Toys" ],
-      "averageScore" : null
+      "receivedGifts" : [ {
+        "price" : 10.0,
+        "category" : "Toys",
+        "productName" : "Doll"
+      } ],
+      "age" : 18,
+      "averageScore" : 2.0
     }, {
       "lastName" : "Pop",
       "firstName" : "Alexandra",
-      "niceScoreHistory" : [ ],
+      "niceScoreHistory" : [ 8.0 ],
       "city" : "Iasi",
-      "assignedBudget" : "69",
+      "giftsPreferences" : [ "Toys" ],
+      "assignedBudget" : 200.0,
       "id" : 1,
-      "receivedGifts" : [ ],
-      "age" : 16,
-      "giftPreferences" : [ "Toys" ],
-      "averageScore" : null
+      "receivedGifts" : [ {
+        "price" : 10.0,
+        "category" : "Toys",
+        "productName" : "Doll"
+      } ],
+      "age" : 17,
+      "averageScore" : 8.0
     }, {
       "lastName" : "Popa",
       "firstName" : "Diana",
-      "niceScoreHistory" : [ ],
+      "niceScoreHistory" : [ 10.0 ],
       "city" : "Brasov",
-      "assignedBudget" : "69",
+      "giftsPreferences" : [ "Technology", "Clothes" ],
+      "assignedBudget" : 250.0,
       "id" : 2,
-      "receivedGifts" : [ ],
-      "age" : 15,
-      "giftPreferences" : [ "Technology", "Clothes" ],
-      "averageScore" : null
+      "receivedGifts" : [ {
+        "price" : 100.0,
+        "category" : "Technology",
+        "productName" : "Headphones"
+      }, {
+        "price" : 70.0,
+        "category" : "Clothes",
+        "productName" : "Shoes"
+      } ],
+      "age" : 16,
+      "averageScore" : 10.0
     } ]
   }, {
     "children" : [ {
-      "lastName" : "Stoica",
-      "firstName" : "Andreea",
-      "niceScoreHistory" : [ ],
-      "city" : "Cluj-Napoca",
-      "assignedBudget" : "69",
-      "id" : 0,
-      "receivedGifts" : [ ],
-      "age" : 17,
-      "giftPreferences" : [ "Clothes", "Toys" ],
-      "averageScore" : null
-    }, {
       "lastName" : "Pop",
       "firstName" : "Alexandra",
-      "niceScoreHistory" : [ ],
+      "niceScoreHistory" : [ 8.0 ],
       "city" : "Iasi",
-      "assignedBudget" : "69",
+      "giftsPreferences" : [ "Toys" ],
+      "assignedBudget" : 292.0,
       "id" : 1,
-      "receivedGifts" : [ ],
-      "age" : 16,
-      "giftPreferences" : [ "Toys" ],
-      "averageScore" : null
+      "receivedGifts" : [ {
+        "price" : 10.0,
+        "category" : "Toys",
+        "productName" : "Doll"
+      } ],
+      "age" : 18,
+      "averageScore" : 8.0
     }, {
       "lastName" : "Popa",
       "firstName" : "Diana",
-      "niceScoreHistory" : [ ],
+      "niceScoreHistory" : [ 10.0 ],
       "city" : "Brasov",
-      "assignedBudget" : "69",
+      "giftsPreferences" : [ "Technology", "Clothes" ],
+      "assignedBudget" : 365.0,
       "id" : 2,
-      "receivedGifts" : [ ],
-      "age" : 15,
-      "giftPreferences" : [ "Technology", "Clothes" ],
-      "averageScore" : null
+      "receivedGifts" : [ {
+        "price" : 100.0,
+        "category" : "Technology",
+        "productName" : "Headphones"
+      }, {
+        "price" : 70.0,
+        "category" : "Clothes",
+        "productName" : "Shoes"
+      } ],
+      "age" : 17,
+      "averageScore" : 10.0
     } ]
   }, {
     "children" : [ {
-      "lastName" : "Stoica",
-      "firstName" : "Andreea",
-      "niceScoreHistory" : [ ],
-      "city" : "Cluj-Napoca",
-      "assignedBudget" : "69",
-      "id" : 0,
-      "receivedGifts" : [ ],
-      "age" : 17,
-      "giftPreferences" : [ "Clothes", "Toys" ],
-      "averageScore" : null
-    }, {
-      "lastName" : "Pop",
-      "firstName" : "Alexandra",
-      "niceScoreHistory" : [ ],
-      "city" : "Iasi",
-      "assignedBudget" : "69",
-      "id" : 1,
-      "receivedGifts" : [ ],
-      "age" : 16,
-      "giftPreferences" : [ "Toys" ],
-      "averageScore" : null
-    }, {
       "lastName" : "Popa",
       "firstName" : "Diana",
-      "niceScoreHistory" : [ ],
+      "niceScoreHistory" : [ 10.0 ],
       "city" : "Brasov",
-      "assignedBudget" : "69",
+      "giftsPreferences" : [ "Technology", "Clothes" ],
+      "assignedBudget" : 890.0,
       "id" : 2,
-      "receivedGifts" : [ ],
-      "age" : 15,
-      "giftPreferences" : [ "Technology", "Clothes" ],
-      "averageScore" : null
+      "receivedGifts" : [ {
+        "price" : 100.0,
+        "category" : "Technology",
+        "productName" : "Headphones"
+      }, {
+        "price" : 70.0,
+        "category" : "Clothes",
+        "productName" : "Shoes"
+      } ],
+      "age" : 18,
+      "averageScore" : 10.0
     } ]
   }, {
-    "children" : [ {
-      "lastName" : "Stoica",
-      "firstName" : "Andreea",
-      "niceScoreHistory" : [ ],
-      "city" : "Cluj-Napoca",
-      "assignedBudget" : "69",
-      "id" : 0,
-      "receivedGifts" : [ ],
-      "age" : 17,
-      "giftPreferences" : [ "Clothes", "Toys" ],
-      "averageScore" : null
-    }, {
-      "lastName" : "Pop",
-      "firstName" : "Alexandra",
-      "niceScoreHistory" : [ ],
-      "city" : "Iasi",
-      "assignedBudget" : "69",
-      "id" : 1,
-      "receivedGifts" : [ ],
-      "age" : 16,
-      "giftPreferences" : [ "Toys" ],
-      "averageScore" : null
-    }, {
-      "lastName" : "Popa",
-      "firstName" : "Diana",
-      "niceScoreHistory" : [ ],
-      "city" : "Brasov",
-      "assignedBudget" : "69",
-      "id" : 2,
-      "receivedGifts" : [ ],
-      "age" : 15,
-      "giftPreferences" : [ "Technology", "Clothes" ],
-      "averageScore" : null
-    } ]
+    "children" : [ ]
   } ]
 }

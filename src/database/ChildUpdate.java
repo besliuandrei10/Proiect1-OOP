@@ -2,7 +2,7 @@ package database;
 
 import enums.Category;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class ChildUpdate {
 
@@ -12,7 +12,7 @@ public class ChildUpdate {
 
     private Long id;
     private Double niceScore;
-    private ArrayList<Category> newPreferences = new ArrayList<>();
+    private LinkedList<Category> newPreferences = new LinkedList<>();
 
     public Long getId() {
         return id;
@@ -30,11 +30,12 @@ public class ChildUpdate {
         this.niceScore = niceScore;
     }
 
-    public ArrayList<Category> getNewPreferences() {
+    public LinkedList<Category> getNewPreferences() {
         return newPreferences;
     }
 
     public void addNewPreferences(Category giftCat) {
         this.newPreferences.add(giftCat);
     }
+
 }

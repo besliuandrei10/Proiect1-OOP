@@ -6,6 +6,10 @@ public class YoungAdult implements ChildAgeCategory {
 
     private Child childRef;
 
+    public Child getChildRef() {
+        return childRef;
+    }
+
     public YoungAdult(Child child) {
         childRef = child;
     }

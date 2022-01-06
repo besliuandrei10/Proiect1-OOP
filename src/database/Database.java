@@ -53,8 +53,21 @@ public class Database {
         this.childList.add(child);
     }
 
+    public void removeFromChildList(Child child) {
+        this.childList.remove(child);
+    }
+
     public void addToGiftsList(Gift gift) {
         this.giftList.add(gift);
+    }
+
+    public Child childByID(final Long id) {
+        for (Child child : this.childList) {
+            if (child.getId().equals(id)) {
+                return child;
+            }
+        }
+        return null;
     }
 
     public void clearDatabase() {
@@ -62,6 +75,7 @@ public class Database {
         this.giftList.clear();
         this.numberOfYears = 0L;
         this.santaBudget = 0.0;
+        this.changes.clear();
     }
 
     public Database() { }

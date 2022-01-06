@@ -23,6 +23,9 @@ public class SimulationWrapper {
     public static void run() throws IOException, ParseException {
         for (int i = 1 ; i <= Constants.TESTS_NUMBER; i++) {
 
+            if (i == 2) {
+                int lmao = 2;
+            }
             Parser.readFile(Constants.INPUT_PATH + i + Constants.FILE_EXTENSION);
 
             Simulation santaYearSimulation = new Simulation();

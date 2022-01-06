@@ -6,7 +6,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Map;
+import java.util.LinkedList;
 
 public class Child {
 
@@ -19,12 +19,21 @@ public class Child {
     private String firstName;
     private Cities city;
     private Double niceScore;
-    private ArrayList<Category> giftsPreferences = new ArrayList<>();
+    private LinkedList<Category> giftsPreferences = new LinkedList<>();
 
     // data for simulation needs
     private Double averageScore;
+    private Double allocatedBudget;
     private ArrayList<Double> niceHistory = new ArrayList<>();
     private ArrayList<Gift> receivedGifts = new ArrayList<>();
+
+    public Double getAllocatedBudget() {
+        return allocatedBudget;
+    }
+
+    public void setAllocatedBudget(Double allocatedBudget) {
+        this.allocatedBudget = allocatedBudget;
+    }
 
     public Double getAverageScore() {
         return averageScore;
@@ -38,8 +47,8 @@ public class Child {
         return niceHistory;
     }
 
-    public void setNiceHistory(ArrayList<Double> niceHistory) {
-        this.niceHistory = niceHistory;
+    public void addToNiceHistory(Double score) {
+        this.niceHistory.add(score);
     }
 
     public ArrayList<Gift> getReceivedGifts() {
@@ -50,7 +59,11 @@ public class Child {
         this.receivedGifts = receivedGifts;
     }
 
-    public void setGiftsPreferences(ArrayList<Category> giftsPreferences) {
+    public void addToReceivedGifts(Gift gift) {
+        this.receivedGifts.add(gift);
+    }
+
+    public void setGiftsPreferences(LinkedList<Category> giftsPreferences) {
         this.giftsPreferences = giftsPreferences;
     }
 
@@ -102,12 +115,16 @@ public class Child {
         this.city = city;
     }
 
-    public ArrayList<Category> getGiftsPreferences() {
+    public LinkedList<Category> getGiftsPreferences() {
         return giftsPreferences;
     }
 
-    public void addGiftsPreferences(Category gift) {
-        this.giftsPreferences.add(gift);
+    public void addGiftsPreferences(Category category) {
+        this.giftsPreferences.add(category);
+    }
+
+    public void removePreference(Category category) {
+        this.giftsPreferences.remove(category);
     }
 
     public JSONObject toJSONObject() {
@@ -123,7 +140,7 @@ public class Child {
         for (Category giftPref : this.getGiftsPreferences()) {
             giftPreferences.add(giftPref.getValue());
         }
-        output.put("giftPreferences", giftPreferences);
+        output.put("giftsPreferences", giftPreferences);
         output.put("averageScore", this.averageScore);
 
         JSONArray niceScoreHistory = new JSONArray();
@@ -131,15 +148,21 @@ public class Child {
             niceScoreHistory.add(score);
         }
         output.put("niceScoreHistory", niceScoreHistory);
-        output.put("assignedBudget", "69");
+        output.put("assignedBudget", allocatedBudget);
 
         JSONArray receivedGifts = new JSONArray();
         for (Gift gift : this.getReceivedGifts()) {
-            niceScoreHistory.add(gift.toJSONObject());
+            receivedGifts.add(gift.toJSONObject());
         }
         output.put("receivedGifts", receivedGifts);
 
         return output;
+    }
+
+    public void clearFieldsForNextYear() {
+        this.averageScore = 0.0;
+        this.receivedGifts.clear();
+        this.allocatedBudget = 0.0;
     }
 
     @Override

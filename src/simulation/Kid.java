@@ -8,6 +8,10 @@ public class Kid implements ChildAgeCategory {
 
     private Child childRef;
 
+    public Child getChildRef() {
+        return childRef;
+    }
+
     public Kid(final Child child) {
         childRef = child;
     }
