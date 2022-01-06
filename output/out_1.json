@@ -1,0 +1,29 @@
+{
+  "annualChanges" : [ {
+    "children" : [ {
+      "lastName" : "Cantemir",
+      "firstName" : "Maria",
+      "niceScoreHistory" : [ ],
+      "city" : "Timisoara",
+      "assignedBudget" : "69",
+      "id" : 0,
+      "receivedGifts" : [ ],
+      "age" : 4,
+      "giftPreferences" : [ "Board Games", "Clothes", "Books" ],
+      "averageScore" : null
+    } ]
+  }, {
+    "children" : [ {
+      "lastName" : "Cantemir",
+      "firstName" : "Maria",
+      "niceScoreHistory" : [ ],
+      "city" : "Timisoara",
+      "assignedBudget" : "69",
+      "id" : 0,
+      "receivedGifts" : [ ],
+      "age" : 4,
+      "giftPreferences" : [ "Board Games", "Clothes", "Books" ],
+      "averageScore" : null
+    } ]
+  } ]
+}

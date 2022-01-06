@@ -1,0 +1,99 @@
+{
+  "annualChanges" : [ {
+    "children" : [ {
+      "lastName" : "Stoica",
+      "firstName" : "Miruna",
+      "niceScoreHistory" : [ ],
+      "city" : "Iasi",
+      "assignedBudget" : "69",
+      "id" : 0,
+      "receivedGifts" : [ ],
+      "age" : 12,
+      "giftPreferences" : [ "Books", "Board Games", "Toys" ],
+      "averageScore" : null
+    }, {
+      "lastName" : "Pop",
+      "firstName" : "Maria",
+      "niceScoreHistory" : [ ],
+      "city" : "Braila",
+      "assignedBudget" : "69",
+      "id" : 1,
+      "receivedGifts" : [ ],
+      "age" : 4,
+      "giftPreferences" : [ "Sweets" ],
+      "averageScore" : null
+    } ]
+  }, {
+    "children" : [ {
+      "lastName" : "Stoica",
+      "firstName" : "Miruna",
+      "niceScoreHistory" : [ ],
+      "city" : "Iasi",
+      "assignedBudget" : "69",
+      "id" : 0,
+      "receivedGifts" : [ ],
+      "age" : 12,
+      "giftPreferences" : [ "Books", "Board Games", "Toys" ],
+      "averageScore" : null
+    }, {
+      "lastName" : "Pop",
+      "firstName" : "Maria",
+      "niceScoreHistory" : [ ],
+      "city" : "Braila",
+      "assignedBudget" : "69",
+      "id" : 1,
+      "receivedGifts" : [ ],
+      "age" : 4,
+      "giftPreferences" : [ "Sweets" ],
+      "averageScore" : null
+    } ]
+  }, {
+    "children" : [ {
+      "lastName" : "Stoica",
+      "firstName" : "Miruna",
+      "niceScoreHistory" : [ ],
+      "city" : "Iasi",
+      "assignedBudget" : "69",
+      "id" : 0,
+      "receivedGifts" : [ ],
+      "age" : 12,
+      "giftPreferences" : [ "Books", "Board Games", "Toys" ],
+      "averageScore" : null
+    }, {
+      "lastName" : "Pop",
+      "firstName" : "Maria",
+      "niceScoreHistory" : [ ],
+      "city" : "Braila",
+      "assignedBudget" : "69",
+      "id" : 1,
+      "receivedGifts" : [ ],
+      "age" : 4,
+      "giftPreferences" : [ "Sweets" ],
+      "averageScore" : null
+    } ]
+  }, {
+    "children" : [ {
+      "lastName" : "Stoica",
+      "firstName" : "Miruna",
+      "niceScoreHistory" : [ ],
+      "city" : "Iasi",
+      "assignedBudget" : "69",
+      "id" : 0,
+      "receivedGifts" : [ ],
+      "age" : 12,
+      "giftPreferences" : [ "Books", "Board Games", "Toys" ],
+      "averageScore" : null
+    }, {
+      "lastName" : "Pop",
+      "firstName" : "Maria",
+      "niceScoreHistory" : [ ],
+      "city" : "Braila",
+      "assignedBudget" : "69",
+      "id" : 1,
+      "receivedGifts" : [ ],
+      "age" : 4,
+      "giftPreferences" : [ "Sweets" ],
+      "averageScore" : null
+    } ]
+  } ]
+}

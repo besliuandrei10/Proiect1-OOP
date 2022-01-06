@@ -1,0 +1,174 @@
+{
+  "annualChanges" : [ {
+    "children" : [ {
+      "lastName" : "Popa",
+      "firstName" : "Tudor",
+      "niceScoreHistory" : [ ],
+      "city" : "Bucuresti",
+      "assignedBudget" : "69",
+      "id" : 0,
+      "receivedGifts" : [ ],
+      "age" : 14,
+      "giftPreferences" : [ "Sweets", "Board Games", "Books" ],
+      "averageScore" : null
+    }, {
+      "lastName" : "Mihalache",
+      "firstName" : "Matei",
+      "niceScoreHistory" : [ ],
+      "city" : "Constanta",
+      "assignedBudget" : "69",
+      "id" : 1,
+      "receivedGifts" : [ ],
+      "age" : 4,
+      "giftPreferences" : [ "Toys", "Sweets", "Books" ],
+      "averageScore" : null
+    }, {
+      "lastName" : "Ionescu",
+      "firstName" : "Matei",
+      "niceScoreHistory" : [ ],
+      "city" : "Braila",
+      "assignedBudget" : "69",
+      "id" : 2,
+      "receivedGifts" : [ ],
+      "age" : 16,
+      "giftPreferences" : [ "Technology" ],
+      "averageScore" : null
+    }, {
+      "lastName" : "Popa",
+      "firstName" : "Diana",
+      "niceScoreHistory" : [ ],
+      "city" : "Cluj-Napoca",
+      "assignedBudget" : "69",
+      "id" : 3,
+      "receivedGifts" : [ ],
+      "age" : 8,
+      "giftPreferences" : [ "Books" ],
+      "averageScore" : null
+    }, {
+      "lastName" : "Stoica",
+      "firstName" : "Alexandra",
+      "niceScoreHistory" : [ ],
+      "city" : "Constanta",
+      "assignedBudget" : "69",
+      "id" : 4,
+      "receivedGifts" : [ ],
+      "age" : 11,
+      "giftPreferences" : [ "Sweets", "Board Games", "Books" ],
+      "averageScore" : null
+    } ]
+  }, {
+    "children" : [ {
+      "lastName" : "Popa",
+      "firstName" : "Tudor",
+      "niceScoreHistory" : [ ],
+      "city" : "Bucuresti",
+      "assignedBudget" : "69",
+      "id" : 0,
+      "receivedGifts" : [ ],
+      "age" : 14,
+      "giftPreferences" : [ "Sweets", "Board Games", "Books" ],
+      "averageScore" : null
+    }, {
+      "lastName" : "Mihalache",
+      "firstName" : "Matei",
+      "niceScoreHistory" : [ ],
+      "city" : "Constanta",
+      "assignedBudget" : "69",
+      "id" : 1,
+      "receivedGifts" : [ ],
+      "age" : 4,
+      "giftPreferences" : [ "Toys", "Sweets", "Books" ],
+      "averageScore" : null
+    }, {
+      "lastName" : "Ionescu",
+      "firstName" : "Matei",
+      "niceScoreHistory" : [ ],
+      "city" : "Braila",
+      "assignedBudget" : "69",
+      "id" : 2,
+      "receivedGifts" : [ ],
+      "age" : 16,
+      "giftPreferences" : [ "Technology" ],
+      "averageScore" : null
+    }, {
+      "lastName" : "Popa",
+      "firstName" : "Diana",
+      "niceScoreHistory" : [ ],
+      "city" : "Cluj-Napoca",
+      "assignedBudget" : "69",
+      "id" : 3,
+      "receivedGifts" : [ ],
+      "age" : 8,
+      "giftPreferences" : [ "Books" ],
+      "averageScore" : null
+    }, {
+      "lastName" : "Stoica",
+      "firstName" : "Alexandra",
+      "niceScoreHistory" : [ ],
+      "city" : "Constanta",
+      "assignedBudget" : "69",
+      "id" : 4,
+      "receivedGifts" : [ ],
+      "age" : 11,
+      "giftPreferences" : [ "Sweets", "Board Games", "Books" ],
+      "averageScore" : null
+    } ]
+  }, {
+    "children" : [ {
+      "lastName" : "Popa",
+      "firstName" : "Tudor",
+      "niceScoreHistory" : [ ],
+      "city" : "Bucuresti",
+      "assignedBudget" : "69",
+      "id" : 0,
+      "receivedGifts" : [ ],
+      "age" : 14,
+      "giftPreferences" : [ "Sweets", "Board Games", "Books" ],
+      "averageScore" : null
+    }, {
+      "lastName" : "Mihalache",
+      "firstName" : "Matei",
+      "niceScoreHistory" : [ ],
+      "city" : "Constanta",
+      "assignedBudget" : "69",
+      "id" : 1,
+      "receivedGifts" : [ ],
+      "age" : 4,
+      "giftPreferences" : [ "Toys", "Sweets", "Books" ],
+      "averageScore" : null
+    }, {
+      "lastName" : "Ionescu",
+      "firstName" : "Matei",
+      "niceScoreHistory" : [ ],
+      "city" : "Braila",
+      "assignedBudget" : "69",
+      "id" : 2,
+      "receivedGifts" : [ ],
+      "age" : 16,
+      "giftPreferences" : [ "Technology" ],
+      "averageScore" : null
+    }, {
+      "lastName" : "Popa",
+      "firstName" : "Diana",
+      "niceScoreHistory" : [ ],
+      "city" : "Cluj-Napoca",
+      "assignedBudget" : "69",
+      "id" : 3,
+      "receivedGifts" : [ ],
+      "age" : 8,
+      "giftPreferences" : [ "Books" ],
+      "averageScore" : null
+    }, {
+      "lastName" : "Stoica",
+      "firstName" : "Alexandra",
+      "niceScoreHistory" : [ ],
+      "city" : "Constanta",
+      "assignedBudget" : "69",
+      "id" : 4,
+      "receivedGifts" : [ ],
+      "age" : 11,
+      "giftPreferences" : [ "Sweets", "Board Games", "Books" ],
+      "averageScore" : null
+    } ]
+  } ]
+}
