@@ -8,6 +8,9 @@ public class Teen implements ChildAgeCategory {
 
     private Child childRef;
 
+    /**
+     * @return
+     */
     public Child getChildRef() {
         return childRef;
     }
@@ -16,6 +19,9 @@ public class Teen implements ChildAgeCategory {
         childRef = child;
     }
 
+    /**
+     * @return
+     */
     @Override
     public Double calculateAverageScore() {
         ArrayList<Double> niceHistory = childRef.getNiceHistory();

@@ -4,63 +4,103 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Database {
-    private final static Database database = new Database();
+    private static final Database DATABASE = new Database();
 
-    Long numberOfYears;
-    Double santaBudget;
+    private Long numberOfYears;
+    private Double santaBudget;
 
-    LinkedList<Child> childList = new LinkedList<>();
-    ArrayList<Gift> giftList = new ArrayList<>();
-    ArrayList<AnnualChange> changes = new ArrayList<>();
+    private LinkedList<Child> childList = new LinkedList<>();
+    private ArrayList<Gift> giftList = new ArrayList<>();
+    private ArrayList<AnnualChange> changes = new ArrayList<>();
 
+    /**
+     * @return
+     */
     public ArrayList<AnnualChange> getChanges() {
         return changes;
     }
 
-    public void setChanges(ArrayList<AnnualChange> changes) {
+    /**
+     * @param changes
+     */
+    public void setChanges(final ArrayList<AnnualChange> changes) {
         this.changes = changes;
     }
 
-    public void addChange(AnnualChange change) {
+    /**
+     * @param change
+     */
+    public void addChange(final AnnualChange change) {
         this.changes.add(change);
     }
 
+    /**
+     * @return
+     */
     public Long getNumberOfYears() {
         return numberOfYears;
     }
 
-    public void setNumberOfYears(Long numberOfYears) {
+    /**
+     * @param numberOfYears
+     */
+    public void setNumberOfYears(final Long numberOfYears) {
         this.numberOfYears = numberOfYears;
     }
 
+    /**
+     * @return
+     */
     public ArrayList<Gift> getGiftList() {
         return giftList;
     }
 
+    /**
+     * @return
+     */
     public Double getSantaBudget() {
         return santaBudget;
     }
 
-    public void setSantaBudget(Double santaBudget) {
+    /**
+     * @param santaBudget
+     */
+    public void setSantaBudget(final Double santaBudget) {
         this.santaBudget = santaBudget;
     }
 
+    /**
+     * @return
+     */
     public LinkedList<Child> getChildList() {
         return childList;
     }
 
-    public void addToChildList(Child child) {
+    /**
+     * @param child
+     */
+    public void addToChildList(final Child child) {
         this.childList.add(child);
     }
 
-    public void removeFromChildList(Child child) {
+    /**
+     * @param child
+     */
+    public void removeFromChildList(final Child child) {
         this.childList.remove(child);
     }
 
-    public void addToGiftsList(Gift gift) {
+    /**
+     * @param gift
+     */
+    public void addToGiftsList(final Gift gift) {
         this.giftList.add(gift);
     }
 
+    /**
+     * @param id
+     * @return
+     */
     public Child childByID(final Long id) {
         for (Child child : this.childList) {
             if (child.getId().equals(id)) {
@@ -70,6 +110,9 @@ public class Database {
         return null;
     }
 
+    /**
+     *
+     */
     public void clearDatabase() {
         this.childList.clear();
         this.giftList.clear();
@@ -80,7 +123,10 @@ public class Database {
 
     public Database() { }
 
+    /**
+     * @return
+     */
     public static Database getInstance() {
-        return database;
+        return DATABASE;
     }
 }

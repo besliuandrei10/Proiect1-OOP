@@ -11,57 +11,107 @@ public class AnnualChange {
     private ArrayList<Child> newChildren = new ArrayList<>();
     private ArrayList<ChildUpdate> childrenUpdates = new ArrayList<>();
 
-    public Double getNewSantaBudget() {
+    /**
+     *
+     * @return
+     */
+    public final Double getNewSantaBudget() {
         return newSantaBudget;
     }
 
-    public void setNewSantaBudget(Double newSantaBudget) {
+    /**
+     *
+     * @param newSantaBudget
+     */
+    public final void setNewSantaBudget(final Double newSantaBudget) {
         this.newSantaBudget = newSantaBudget;
     }
 
+    /**
+     *
+     * @return
+     */
     public ArrayList<Gift> getNewGifts() {
         return newGifts;
     }
 
-    public void setNewGifts(ArrayList<Gift> newGifts) {
+    /**
+     * @param newGifts
+     */
+    public void setNewGifts(final ArrayList<Gift> newGifts) {
         this.newGifts = newGifts;
     }
 
-    public void addNewGifts(Gift gift) {
+    /**
+     * @param gift
+     */
+    public void addNewGifts(final Gift gift) {
         this.newGifts.add(gift);
     }
 
+    /**
+     * @return
+     */
     public ArrayList<Child> getNewChildren() {
         return newChildren;
     }
 
-    public void addNewChildren(Child child) {
+    /**
+     *
+     * @param child
+     */
+    public void addNewChildren(final Child child) {
         this.newChildren.add(child);
     }
 
-    public void setNewChildren(ArrayList<Child> newChildren) {
+    /**
+     *
+     * @param newChildren
+     */
+    public void setNewChildren(final ArrayList<Child> newChildren) {
         this.newChildren = newChildren;
     }
 
+    /**
+     *
+     * @return
+     */
     public ArrayList<ChildUpdate> getChildrenUpdates() {
         return childrenUpdates;
     }
 
-    public void setChildrenUpdates(ArrayList<ChildUpdate> childrenUpdates) {
+    /**
+     *
+     * @param childrenUpdates
+     */
+    public void setChildrenUpdates(final ArrayList<ChildUpdate> childrenUpdates) {
         this.childrenUpdates = childrenUpdates;
     }
 
-    public void addChildrenUpdates(ChildUpdate update) {
+    /**
+     *
+     * @param update
+     */
+    public void addChildrenUpdates(final ChildUpdate update) {
         this.childrenUpdates.add(update);
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String toString() {
-        return "AnnualChange{" +
-                "newSantaBudget=" + newSantaBudget +
-                ", newGifts=" + newGifts +
-                ", newChildren=" + newChildren +
-                ", childrenUpdates=" + childrenUpdates +
+        return "AnnualChange{"
+                +
+                "newSantaBudget=" + newSantaBudget
+                +
+                ", newGifts=" + newGifts
+                +
+                ", newChildren=" + newChildren
+                +
+                ", childrenUpdates=" + childrenUpdates
+                +
                 '}';
     }
 }

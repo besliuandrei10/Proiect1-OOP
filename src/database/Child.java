@@ -27,106 +27,177 @@ public class Child {
     private ArrayList<Double> niceHistory = new ArrayList<>();
     private ArrayList<Gift> receivedGifts = new ArrayList<>();
 
+    /**
+     * @return
+     */
     public Double getAllocatedBudget() {
         return allocatedBudget;
     }
 
-    public void setAllocatedBudget(Double allocatedBudget) {
+    /**
+     * @param allocatedBudget
+     */
+    public void setAllocatedBudget(final Double allocatedBudget) {
         this.allocatedBudget = allocatedBudget;
     }
 
+    /**
+     * @return
+     */
     public Double getAverageScore() {
         return averageScore;
     }
 
-    public void setAverageScore(Double averageScore) {
+    /**
+     * @param averageScore
+     */
+    public void setAverageScore(final Double averageScore) {
         this.averageScore = averageScore;
     }
 
+    /**
+     * @return
+     */
     public ArrayList<Double> getNiceHistory() {
         return niceHistory;
     }
 
-    public void addToNiceHistory(Double score) {
+    /**
+     * @param score
+     */
+    public void addToNiceHistory(final Double score) {
         this.niceHistory.add(score);
     }
 
+    /**
+     * @return
+     */
     public ArrayList<Gift> getReceivedGifts() {
         return receivedGifts;
     }
 
-    public void setReceivedGifts(ArrayList<Gift> receivedGifts) {
+    /**
+     * @param receivedGifts
+     */
+    public void setReceivedGifts(final ArrayList<Gift> receivedGifts) {
         this.receivedGifts = receivedGifts;
     }
 
-    public void addToReceivedGifts(Gift gift) {
+    /**
+     * @param gift
+     */
+    public void addToReceivedGifts(final Gift gift) {
         this.receivedGifts.add(gift);
     }
 
-    public void setGiftsPreferences(LinkedList<Category> giftsPreferences) {
+    /**
+     * @param giftsPreferences
+     */
+    public void setGiftsPreferences(final LinkedList<Category> giftsPreferences) {
         this.giftsPreferences = giftsPreferences;
     }
 
+    /**
+     * @return
+     */
     public Double getNiceScore() {
         return niceScore;
     }
 
-    public void setNiceScore(Double niceScore) {
+    /**
+     * @param niceScore
+     */
+    public void setNiceScore(final Double niceScore) {
         this.niceScore = niceScore;
     }
 
+    /**
+     * @return
+     */
     public Long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    /**
+     * @param id
+     */
+    public void setId(final Long id) {
         this.id = id;
     }
 
+    /**
+     * @return
+     */
     public Long getAge() {
         return age;
     }
 
-    public void setAge(Long age) {
+    /**
+     * @param age
+     */
+    public void setAge(final Long age) {
         this.age = age;
     }
 
+    /**
+     * @return
+     */
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
+    /**
+     * @param lastName
+     */
+    public void setLastName(final String lastName) {
         this.lastName = lastName;
     }
 
+    /**
+     * @return
+     */
     public String getFirstName() {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
+    /**
+     * @param firstName
+     */
+    public void setFirstName(final String firstName) {
         this.firstName = firstName;
     }
 
+    /**
+     * @return
+     */
     public Cities getCity() {
         return city;
     }
 
-    public void setCity(Cities city) {
+    /**
+     * @param city
+     */
+    public void setCity(final Cities city) {
         this.city = city;
     }
 
+    /**
+     * @return
+     */
     public LinkedList<Category> getGiftsPreferences() {
         return giftsPreferences;
     }
 
-    public void addGiftsPreferences(Category category) {
+    /**
+     * @param category
+     */
+    public void addGiftsPreferences(final Category category) {
         this.giftsPreferences.add(category);
     }
 
-    public void removePreference(Category category) {
-        this.giftsPreferences.remove(category);
-    }
-
+    /**
+     * @return
+     */
     public JSONObject toJSONObject() {
         JSONObject output = new JSONObject();
 
@@ -150,31 +221,45 @@ public class Child {
         output.put("niceScoreHistory", niceScoreHistory);
         output.put("assignedBudget", allocatedBudget);
 
-        JSONArray receivedGifts = new JSONArray();
+        JSONArray jsonReceivedGifts = new JSONArray();
         for (Gift gift : this.getReceivedGifts()) {
-            receivedGifts.add(gift.toJSONObject());
+            jsonReceivedGifts.add(gift.toJSONObject());
         }
-        output.put("receivedGifts", receivedGifts);
+        output.put("receivedGifts", jsonReceivedGifts);
 
         return output;
     }
 
+    /**
+     *
+     */
     public void clearFieldsForNextYear() {
         this.averageScore = 0.0;
         this.receivedGifts.clear();
         this.allocatedBudget = 0.0;
     }
 
+    /**
+     * @return
+     */
     @Override
     public String toString() {
-        return "Child{" +
-                "id=" + id +
-                ", age=" + age +
-                ", lastName='" + lastName + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", city=" + city +
-                ", niceScore=" + niceScore +
-                ", giftsPreferences=" + giftsPreferences +
+        return "Child{"
+                +
+                "id=" + id
+                +
+                ", age=" + age
+                +
+                ", lastName='" + lastName + '\''
+                +
+                ", firstName='" + firstName + '\''
+                +
+                ", city=" + city
+                +
+                ", niceScore=" + niceScore
+                +
+                ", giftsPreferences=" + giftsPreferences
+                +
                 '}';
     }
 }

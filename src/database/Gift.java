@@ -11,30 +11,51 @@ public class Gift {
     private Double price;
     private Category category;
 
+    /**
+     * @return
+     */
     public String getProductName() {
         return productName;
     }
 
-    public void setProductName(String productName) {
+    /**
+     * @param productName
+     */
+    public void setProductName(final String productName) {
         this.productName = productName;
     }
 
+    /**
+     * @return
+     */
     public Double getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
+    /**
+     * @param price
+     */
+    public void setPrice(final Double price) {
         this.price = price;
     }
 
+    /**
+     * @return
+     */
     public Category getCategory() {
         return category;
     }
 
-    public void setCategory(Category category) {
+    /**
+     * @param category
+     */
+    public void setCategory(final Category category) {
         this.category = category;
     }
 
+    /**
+     * @return
+     */
     public JSONObject toJSONObject() {
         JSONObject output = new JSONObject();
 
@@ -45,12 +66,19 @@ public class Gift {
         return output;
     }
 
+    /**
+     * @return
+     */
     @Override
     public String toString() {
-        return "Gift{" +
-                "productName='" + productName + '\'' +
-                ", price=" + price +
-                ", category=" + category +
+        return "Gift{"
+                +
+                "productName='" + productName + '\''
+                +
+                ", price=" + price
+                +
+                ", category=" + category
+                +
                 '}';
     }
 }

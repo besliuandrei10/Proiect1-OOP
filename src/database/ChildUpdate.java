@@ -14,27 +14,45 @@ public class ChildUpdate {
     private Double niceScore;
     private LinkedList<Category> newPreferences = new LinkedList<>();
 
+    /**
+     * @return
+     */
     public Long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    /**
+     * @param id
+     */
+    public void setId(final Long id) {
         this.id = id;
     }
 
+    /**
+     * @return
+     */
     public Double getNiceScore() {
         return niceScore;
     }
 
-    public void setNiceScore(Double niceScore) {
+    /**
+     * @param niceScore
+     */
+    public void setNiceScore(final Double niceScore) {
         this.niceScore = niceScore;
     }
 
+    /**
+     * @return
+     */
     public LinkedList<Category> getNewPreferences() {
         return newPreferences;
     }
 
-    public void addNewPreferences(Category giftCat) {
+    /**
+     * @param giftCat
+     */
+    public void addNewPreferences(final Category giftCat) {
         this.newPreferences.add(giftCat);
     }
 

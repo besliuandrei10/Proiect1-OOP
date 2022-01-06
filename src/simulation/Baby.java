@@ -1,11 +1,15 @@
 package simulation;
 
+import common.Constants;
 import database.Child;
 
 public class Baby implements ChildAgeCategory {
 
     private Child childRef;
 
+    /**
+     * @return
+     */
     public Child getChildRef() {
         return childRef;
     }
@@ -14,8 +18,11 @@ public class Baby implements ChildAgeCategory {
         childRef = child;
     }
 
+    /**
+     * @return
+     */
     @Override
     public Double calculateAverageScore() {
-        return 10.0;
+        return Constants.BABY_NICESCORE;
     }
 }

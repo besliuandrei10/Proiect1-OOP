@@ -5,12 +5,15 @@ import database.Database;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-public class Writer {
+public final class Writer {
 
-    public Writer() {
+    private Writer() {
 
     }
 
+    /**
+     * @return
+     */
     public static JSONObject writeAllChildren() {
 
         JSONObject output = new JSONObject();

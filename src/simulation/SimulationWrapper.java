@@ -8,12 +8,12 @@ import org.json.simple.parser.ParseException;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class SimulationWrapper {
+public final class SimulationWrapper {
 
     /**
      *  Constructor
      */
-    public SimulationWrapper() {
+    private SimulationWrapper() {
 
     }
 
@@ -21,11 +21,9 @@ public class SimulationWrapper {
      * Begin simulation
      */
     public static void run() throws IOException, ParseException {
-        for (int i = 1 ; i <= Constants.TESTS_NUMBER; i++) {
+        for (int i = 1; i <= Constants.TESTS_NUMBER; i++) {
 
-            if (i == 2) {
-                int lmao = 2;
-            }
+            // read data from file
             Parser.readFile(Constants.INPUT_PATH + i + Constants.FILE_EXTENSION);
 
             Simulation santaYearSimulation = new Simulation();

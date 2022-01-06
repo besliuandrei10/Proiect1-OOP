@@ -1,6 +1,7 @@
 package simulation;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import common.Constants;
 import database.AnnualChange;
 import database.Child;
 import database.ChildUpdate;
@@ -24,6 +25,10 @@ public class Simulation {
 
     }
 
+    /**
+     * @param file
+     * @throws IOException
+     */
     public void writeReport(final FileWriter file) throws IOException {
         JSONObject output = new JSONObject();
         output.put("annualChildren", this.annualChanges);
@@ -141,21 +146,26 @@ public class Simulation {
 
     }
 
+    /**
+     * @return
+     */
     private ArrayList<ChildAgeCategory> sortChildren() {
         ArrayList<ChildAgeCategory> categorizedChildren = new ArrayList<>();
         LinkedList<Child> copy = new LinkedList<>(Database.getInstance().getChildList());
 
         for (Child child : copy) {
-            if (child.getAge() < 5) {
+            if (child.getAge() < Constants.BABY_AGE) {
                 categorizedChildren.add(new Baby(child));
             }
-            if (child.getAge() >= 5 && child.getAge() < 12) {
+            if (child.getAge() >= Constants.BABY_AGE
+                    && child.getAge() < Constants.TEEN_AGE) {
                 categorizedChildren.add(new Kid(child));
             }
-            if (child.getAge() >= 12 && child.getAge() <= 18) {
+            if (child.getAge() >= Constants.TEEN_AGE
+                    && child.getAge() <= Constants.YOUNG_ADULT_AGE) {
                 categorizedChildren.add(new Teen(child));
             }
-            if (child.getAge() > 18) {
+            if (child.getAge() > Constants.YOUNG_ADULT_AGE) {
                 Database.getInstance().removeFromChildList(child);
             }
         }
@@ -163,21 +173,24 @@ public class Simulation {
         return categorizedChildren;
     }
 
+    /**
+     *
+     */
     public void simulateYears() {
         Long numberOfYears = Database.getInstance().getNumberOfYears();
-        JSONArray annualChanges = new JSONArray();
+        JSONArray listOfAnnualChanges = new JSONArray();
 
         this.initializeNiceScoreHistory();
         simulateRound();
         JSONObject children = Writer.writeAllChildren();
-        annualChanges.add(children);
+        listOfAnnualChanges.add(children);
 
         for (int i = 0; i < numberOfYears; i++) {
             this.nextYear(i);
             simulateRound();
             children = Writer.writeAllChildren();
-            annualChanges.add(children);
+            listOfAnnualChanges.add(children);
         }
-        this.annualChanges = annualChanges;
+        annualChanges = listOfAnnualChanges;
     }
 }
