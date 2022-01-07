@@ -1,0 +1,36 @@
+Student: BESLIU ANDREI-CORNEL
+GRUPA: 321CD
+
+--=== Proiect Part 1 - OOP ===--
+
+Entry-point pentru programul meu -> SimulationWrapper.run()
+
+!!!DESIGN PATTERNS USED !!!
+Singleton -> Database for obvious reasons
+Strategy -> Pentru a diferentia intre Baby, Kid, Teen, YoungAdult
+!!! END DESIGN PATTERNS USED !!!
+
+Clasa Parser se ocupa de partea mai inestetica a procesului de citire a fisierelor .json
+
+Intr-un mod enervant, am realizat doar cand scriam clasa Writer ca aveam libraria Jackson
+la dispozitie si probabil ca puteam sa organizez mult mai bine procesul de data ingestion.
+
+Acum ca l-am scris si merge, asa ramane, what can I say.
+
+Clasa Simulation se ocupa de simularea efectiva a datelor citite dintr-un .json
+Entry-ul se face prin metoda simulateYears().
+
+Singura mentiune care trebuie facuta este faptul ca runda 0 este simulate
+in exteriorul loop-ului deoarece este nevoie sa fie initializat istoricul de nice-scores
+si deoarece indexul listei de annualChanges incepe de la 0 asa ca nu se putea evita
+putina hidosenie aici.
+Exceptand asta, restul functiilor sunt migaloase dar consider ca sunt suficient de
+lizibil scrise si usor de inteles.
+
+La finalul fiecarui an, este scris un dump al tuturor copiilor din Database intr-un
+array care retine asemenea date din toti anii precedenti.
+Copii care nu mai sunt eligibili pentru cadouri sunt eliminati la fiecare grupare in
+categorii de varsta.
+
+Inapoi in SimulationWrapper, se afiseaza continutul array-ul de schimbari anuale,
+se elibereaza baza de date pentru fisierul urmator si se avanseaza la urmatorul test.

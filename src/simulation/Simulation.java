@@ -107,7 +107,7 @@ public class Simulation {
                         }
                     }
                 }
-                if (remainingBudget - selectedGiftPrice > 0) {
+                if (selectedGift != null && (remainingBudget - selectedGiftPrice > 0)) {
                     child.addToReceivedGifts(selectedGift);
                     remainingBudget -= selectedGiftPrice;
                 }
